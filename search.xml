@@ -4,18 +4,16 @@
   
     
     <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>http://liuxu.co/2016/09/02/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
+      <title><![CDATA[2-3树]]></title>
+      <url>http://liuxu.co/2016/09/29/2-3%E6%A0%91/</url>
+      <content type="html"><![CDATA[<h3 id="&#x5B9A;&#x4E49;"><a href="#&#x5B9A;&#x4E49;" class="headerlink" title="&#x5B9A;&#x4E49;"></a>&#x5B9A;&#x4E49;</h3><p>2-3&#x6811;&#x662F;&#x9636;&#x4E3A;3&#x7684;B&#x6811;&#xFF0C;&#x5E76;&#x7B26;&#x5408;&#x4EE5;&#x4E0B;&#x6761;&#x4EF6;:</p>
+<ol>
+<li>&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x6709;&#x4E00;&#x4E2A;&#x503C;&#xFF08;2-&#x8282;&#x70B9;&#xFF09;&#x6216;&#x4E24;&#x4E2A;&#x503C;&#xFF08;3-&#x8282;&#x70B9;&#xFF09;</li>
+<li>2-&#x8282;&#x70B9;&#xFF0C;&#x542B;&#x6709;&#x4E00;&#x4E2A;&#x952E;&#xFF08;&#x53CA;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF09;&#x548C;&#x4E24;&#x6761;&#x94FE;&#x63A5;&#xFF0C;&#x5DE6;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x5C0F;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;&#xFF0C;&#x53F3;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x5927;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;</li>
+<li>3-&#x8282;&#x70B9;&#xFF0C;&#x542B;&#x6709;&#x4E24;&#x4E2A;&#x952E;&#xFF08;&#x53CA;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF09;&#x548C;&#x4E09;&#x6761;&#x94FE;&#x63A5;&#xFF0C;&#x5DE6;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x5C0F;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;&#xFF0C;&#x4E2D;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x4F4D;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x4E24;&#x4E2A;&#x503C;&#x4E4B;&#x95F4;&#xFF0C;&#x53F3;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x5927;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;</li>
+<li>&#x9664;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x5916;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x6CA1;&#x6709;&#x7A7A;&#x94FE;&#x63A5;&#xFF0C;&#x6240;&#x6709;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x5230;&#x6839;&#x8282;&#x70B9;&#x7684;&#x8DDD;&#x79BB;&#x76F8;&#x540C;<br><img src="/2016/09/29/2-3&#x6811;/2-3-tree.svg" alt="2-3&#x6811;&#x793A;&#x610F;&#x56FE;"><h3 id="&#x67E5;&#x627E;"><a href="#&#x67E5;&#x627E;" class="headerlink" title="&#x67E5;&#x627E;"></a>&#x67E5;&#x627E;</h3><img src="/2016/09/29/2-3&#x6811;/2-3-tree-search.svg" alt=""></li>
+</ol>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3>]]></content>
     </entry>
     
   

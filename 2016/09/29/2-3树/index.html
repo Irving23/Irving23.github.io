@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="数据结构,树,tree," />
 
 
 
@@ -84,15 +84,25 @@
 
 
 
-<meta name="description" content="Irving23&apos;s Notes">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Irving23's Notes">
-<meta property="og:url" content="http://liuxu.co/archives/index.html">
+<meta name="description" content="&amp;#x5B9A;&amp;#x4E49;2-3&amp;#x6811;&amp;#x662F;&amp;#x9636;&amp;#x4E3A;3&amp;#x7684;B&amp;#x6811;&amp;#xFF0C;&amp;#x5E76;&amp;#x7B26;&amp;#x5408;&amp;#x4EE5;&amp;#x4E0B;&amp;#x6761;&amp;#x4EF6;:
+
+&amp;#x6BCF;&amp;#x4E2A;&amp;#x8282;&amp;#x70B9;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x503C;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2-3树">
+<meta property="og:url" content="http://liuxu.co/2016/09/29/2-3树/index.html">
 <meta property="og:site_name" content="Irving23's Notes">
-<meta property="og:description" content="Irving23&apos;s Notes">
+<meta property="og:description" content="&amp;#x5B9A;&amp;#x4E49;2-3&amp;#x6811;&amp;#x662F;&amp;#x9636;&amp;#x4E3A;3&amp;#x7684;B&amp;#x6811;&amp;#xFF0C;&amp;#x5E76;&amp;#x7B26;&amp;#x5408;&amp;#x4EE5;&amp;#x4E0B;&amp;#x6761;&amp;#x4EF6;:
+
+&amp;#x6BCF;&amp;#x4E2A;&amp;#x8282;&amp;#x70B9;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x503C;">
+<meta property="og:image" content="http://liuxu.co/2016/09/29/2-3树/2-3-tree.svg">
+<meta property="og:image" content="http://liuxu.co/2016/09/29/2-3树/2-3-tree-search.svg">
+<meta property="og:updated_time" content="2016-10-11T09:14:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Irving23's Notes">
-<meta name="twitter:description" content="Irving23&apos;s Notes">
+<meta name="twitter:title" content="2-3树">
+<meta name="twitter:description" content="&amp;#x5B9A;&amp;#x4E49;2-3&amp;#x6811;&amp;#x662F;&amp;#x9636;&amp;#x4E3A;3&amp;#x7684;B&amp;#x6811;&amp;#xFF0C;&amp;#x5E76;&amp;#x7B26;&amp;#x5408;&amp;#x4EE5;&amp;#x4E0B;&amp;#x6761;&amp;#x4EF6;:
+
+&amp;#x6BCF;&amp;#x4E2A;&amp;#x8282;&amp;#x70B9;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x503C;">
+<meta name="twitter:image" content="http://liuxu.co/2016/09/29/2-3树/2-3-tree.svg">
 
 
 
@@ -113,9 +123,9 @@
 
 
 
-  <link rel="canonical" href="http://liuxu.co/archives/"/>
+  <link rel="canonical" href="http://liuxu.co/2016/09/29/2-3树/"/>
 
-  <title> 归档 | Irving23's Notes </title>
+  <title> 2-3树 | Irving23's Notes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,7 +146,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -237,66 +247,125 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 1 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                2-3树
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-29T17:58:30+08:00" content="2016-09-29">
+              2016-09-29
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/29/2-3树/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/09/29/2-3树/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <h3 id="&#x5B9A;&#x4E49;"><a href="#&#x5B9A;&#x4E49;" class="headerlink" title="&#x5B9A;&#x4E49;"></a>&#x5B9A;&#x4E49;</h3><p>2-3&#x6811;&#x662F;&#x9636;&#x4E3A;3&#x7684;B&#x6811;&#xFF0C;&#x5E76;&#x7B26;&#x5408;&#x4EE5;&#x4E0B;&#x6761;&#x4EF6;:</p>
+<ol>
+<li>&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x6709;&#x4E00;&#x4E2A;&#x503C;&#xFF08;2-&#x8282;&#x70B9;&#xFF09;&#x6216;&#x4E24;&#x4E2A;&#x503C;&#xFF08;3-&#x8282;&#x70B9;&#xFF09;</li>
+<li>2-&#x8282;&#x70B9;&#xFF0C;&#x542B;&#x6709;&#x4E00;&#x4E2A;&#x952E;&#xFF08;&#x53CA;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF09;&#x548C;&#x4E24;&#x6761;&#x94FE;&#x63A5;&#xFF0C;&#x5DE6;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x5C0F;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;&#xFF0C;&#x53F3;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x5927;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;</li>
+<li>3-&#x8282;&#x70B9;&#xFF0C;&#x542B;&#x6709;&#x4E24;&#x4E2A;&#x952E;&#xFF08;&#x53CA;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF09;&#x548C;&#x4E09;&#x6761;&#x94FE;&#x63A5;&#xFF0C;&#x5DE6;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x5C0F;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;&#xFF0C;&#x4E2D;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x4F4D;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x4E24;&#x4E2A;&#x503C;&#x4E4B;&#x95F4;&#xFF0C;&#x53F3;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x5927;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;</li>
+<li>&#x9664;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x5916;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x6CA1;&#x6709;&#x7A7A;&#x94FE;&#x63A5;&#xFF0C;&#x6240;&#x6709;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x5230;&#x6839;&#x8282;&#x70B9;&#x7684;&#x8DDD;&#x79BB;&#x76F8;&#x540C;<br><img src="/2016/09/29/2-3&#x6811;/2-3-tree.svg" alt="2-3&#x6811;&#x793A;&#x610F;&#x56FE;"><h3 id="&#x67E5;&#x627E;"><a href="#&#x67E5;&#x627E;" class="headerlink" title="&#x67E5;&#x627E;"></a>&#x67E5;&#x627E;</h3><img src="/2016/09/29/2-3&#x6811;/2-3-tree-search.svg" alt=""></li>
+</ol>
+<h3 id="References"><a href="#References" class="headerlink" title="References"></a>References</h3>
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数据结构/" rel="tag">#数据结构</a>
+          
+            <a href="/tags/树/" rel="tag">#树</a>
+          
+            <a href="/tags/tree/" rel="tag">#tree</a>
+          
         </div>
       
-      
 
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/09/29/2-3树/" itemprop="url">
-              
-                <span itemprop="name">2-3树</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-29T17:58:30+08:00"
-              content="2016-09-29" >
-          09-29
-        </time>
-      </div>
-
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
-  </section>
-
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -304,6 +373,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -323,8 +403,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -367,6 +456,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查找"><span class="nav-number">2.</span> <span class="nav-text">查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#References"><span class="nav-number">3.</span> <span class="nav-text">References</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -463,11 +563,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   
@@ -485,9 +583,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'irving23';
-      var disqus_identifier = 'archives/index.html';
-      var disqus_title = "";
-      var disqus_url = '';
+      var disqus_identifier = '2016/09/29/2-3树/';
+      var disqus_title = "2-3树";
+      var disqus_url = 'http://liuxu.co/2016/09/29/2-3树/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
@@ -498,6 +596,8 @@
       }
 
       run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
       
     </script>
   
