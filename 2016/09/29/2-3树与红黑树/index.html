@@ -15,27 +15,27 @@
 
 
 
-<meta name="description" content="2-3&amp;#x6811;&amp;#x5B9A;&amp;#x4E49;2-3&amp;#x6811;&amp;#x662F;&amp;#x9636;&amp;#x4E3A;3&amp;#x7684;B&amp;#x6811;&amp;#xFF0C;&amp;#x5E76;&amp;#x7B26;&amp;#x5408;&amp;#x4EE5;&amp;#x4E0B;&amp;#x6761;&amp;#x4EF6;:
-
-&amp;#x6BCF;&amp;#x4E2A;&amp;#x8282;&amp;#x70B9;&amp;#x6709;&amp;#x4E00;&amp;#x4E">
+<meta name="description" content="2-3&amp;#x6811;&amp;#x5B9A;&amp;#x4E49;
+&amp;#x6BCF;&amp;#x4E2A;&amp;#x8282;&amp;#x70B9;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x503C;&amp;#xFF08;2-&amp;#x8282;&amp;#x70B9;&amp;#xFF09;&amp;#x6216;&amp;#x4E24;&amp;#x4E2A;&amp;#x503C;&amp;#xFF08;3-&amp;#x8282;&amp;#x70B9;&amp;#xFF09;
+2-&amp;#x82">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2-3树与红黑树">
 <meta property="og:url" content="https://liuxu.co/2016/09/29/2-3树与红黑树/index.html">
 <meta property="og:site_name" content="Irving23's Notes">
-<meta property="og:description" content="2-3&amp;#x6811;&amp;#x5B9A;&amp;#x4E49;2-3&amp;#x6811;&amp;#x662F;&amp;#x9636;&amp;#x4E3A;3&amp;#x7684;B&amp;#x6811;&amp;#xFF0C;&amp;#x5E76;&amp;#x7B26;&amp;#x5408;&amp;#x4EE5;&amp;#x4E0B;&amp;#x6761;&amp;#x4EF6;:
-
-&amp;#x6BCF;&amp;#x4E2A;&amp;#x8282;&amp;#x70B9;&amp;#x6709;&amp;#x4E00;&amp;#x4E">
+<meta property="og:description" content="2-3&amp;#x6811;&amp;#x5B9A;&amp;#x4E49;
+&amp;#x6BCF;&amp;#x4E2A;&amp;#x8282;&amp;#x70B9;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x503C;&amp;#xFF08;2-&amp;#x8282;&amp;#x70B9;&amp;#xFF09;&amp;#x6216;&amp;#x4E24;&amp;#x4E2A;&amp;#x503C;&amp;#xFF08;3-&amp;#x8282;&amp;#x70B9;&amp;#xFF09;
+2-&amp;#x82">
 <meta property="og:image" content="https://liuxu.co/2016/09/29/2-3树与红黑树/2-3-tree.svg">
 <meta property="og:image" content="https://liuxu.co/2016/09/29/2-3树与红黑树/2-3-tree-search.svg">
 <meta property="og:image" content="https://liuxu.co/2016/09/29/2-3树与红黑树/insert-into-a-2-node.svg">
 <meta property="og:image" content="https://liuxu.co/2016/09/29/2-3树与红黑树/insert-into-a-signale-3-node.svg">
 <meta property="og:image" content="https://liuxu.co/2016/09/29/2-3树与红黑树/insert-into-a-3-node-whose-parent-is-a-2-node.svg">
-<meta property="og:updated_time" content="2016-10-12T13:01:48.000Z">
+<meta property="og:updated_time" content="2016-10-14T08:30:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2-3树与红黑树">
-<meta name="twitter:description" content="2-3&amp;#x6811;&amp;#x5B9A;&amp;#x4E49;2-3&amp;#x6811;&amp;#x662F;&amp;#x9636;&amp;#x4E3A;3&amp;#x7684;B&amp;#x6811;&amp;#xFF0C;&amp;#x5E76;&amp;#x7B26;&amp;#x5408;&amp;#x4EE5;&amp;#x4E0B;&amp;#x6761;&amp;#x4EF6;:
-
-&amp;#x6BCF;&amp;#x4E2A;&amp;#x8282;&amp;#x70B9;&amp;#x6709;&amp;#x4E00;&amp;#x4E">
+<meta name="twitter:description" content="2-3&amp;#x6811;&amp;#x5B9A;&amp;#x4E49;
+&amp;#x6BCF;&amp;#x4E2A;&amp;#x8282;&amp;#x70B9;&amp;#x6709;&amp;#x4E00;&amp;#x4E2A;&amp;#x503C;&amp;#xFF08;2-&amp;#x8282;&amp;#x70B9;&amp;#xFF09;&amp;#x6216;&amp;#x4E24;&amp;#x4E2A;&amp;#x503C;&amp;#xFF08;3-&amp;#x8282;&amp;#x70B9;&amp;#xFF09;
+2-&amp;#x82">
 <meta name="twitter:image" content="https://liuxu.co/2016/09/29/2-3树与红黑树/2-3-tree.svg">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
@@ -94,8 +94,6 @@
     <script> yiliaConfig.rootUrl = "\/";</script>
 
 
-
-    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57e892ac71308c02"></script>
 
 
 
@@ -228,8 +226,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="2-3&#x6811;"><a href="#2-3&#x6811;" class="headerlink" title="2-3&#x6811;"></a>2-3&#x6811;</h2><h3 id="&#x5B9A;&#x4E49;"><a href="#&#x5B9A;&#x4E49;" class="headerlink" title="&#x5B9A;&#x4E49;"></a>&#x5B9A;&#x4E49;</h3><p>2-3&#x6811;&#x662F;&#x9636;&#x4E3A;3&#x7684;B&#x6811;&#xFF0C;&#x5E76;&#x7B26;&#x5408;&#x4EE5;&#x4E0B;&#x6761;&#x4EF6;:</p>
-<ul>
+        <h2 id="2-3&#x6811;"><a href="#2-3&#x6811;" class="headerlink" title="2-3&#x6811;"></a>2-3&#x6811;</h2><h3 id="&#x5B9A;&#x4E49;"><a href="#&#x5B9A;&#x4E49;" class="headerlink" title="&#x5B9A;&#x4E49;"></a>&#x5B9A;&#x4E49;</h3><ul>
 <li>&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x6709;&#x4E00;&#x4E2A;&#x503C;&#xFF08;2-&#x8282;&#x70B9;&#xFF09;&#x6216;&#x4E24;&#x4E2A;&#x503C;&#xFF08;3-&#x8282;&#x70B9;&#xFF09;</li>
 <li>2-&#x8282;&#x70B9;&#xFF0C;&#x542B;&#x6709;&#x4E00;&#x4E2A;&#x952E;&#xFF08;&#x53CA;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF09;&#x548C;&#x4E24;&#x6761;&#x94FE;&#x63A5;&#xFF0C;&#x5DE6;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x5C0F;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;&#xFF0C;&#x53F3;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x5927;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;</li>
 <li>3-&#x8282;&#x70B9;&#xFF0C;&#x542B;&#x6709;&#x4E24;&#x4E2A;&#x952E;&#xFF08;&#x53CA;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF09;&#x548C;&#x4E09;&#x6761;&#x94FE;&#x63A5;&#xFF0C;&#x5DE6;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x5C0F;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;&#xFF0C;&#x4E2D;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x4F4D;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;&#x7684;&#x4E24;&#x4E2A;&#x503C;&#x4E4B;&#x95F4;&#xFF0C;&#x53F3;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;2-3&#x6811;&#x4E2D;&#x7684;&#x952E;&#x90FD;&#x5927;&#x4E8E;&#x8BE5;&#x8282;&#x70B9;</li>
@@ -251,7 +248,7 @@
         <p><span>本文标题:</span><a href="/2016/09/29/2-3树与红黑树/">2-3树与红黑树</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Irving23</a></p>
         <p><span>发布时间:</span>2016-09-29, 17:58:30</p>
-        <p><span>最后更新:</span>2016-10-12, 21:01:48</p>
+        <p><span>最后更新:</span>2016-10-14, 16:30:47</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/09/29/2-3树与红黑树/" title="2-3树与红黑树">https://liuxu.co/2016/09/29/2-3树与红黑树/</a>
             <span class="copy-path" data-clipboard-text="原文: https://liuxu.co/2016/09/29/2-3树与红黑树/　　作者: Irving23" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -289,19 +286,6 @@
     <script>
         yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
     </script>
-
-
-
-    
-<div class="share">
-    
-
-    
-        <div class="addthis_sharing_toolbox"></div>
-    
-</div>
-
-
 
 
 
