@@ -15,16 +15,13 @@
 
 
 
-<meta name="description" content="&amp;#x5B9A;&amp;#x4E49;&amp;#x4E00;&amp;#x9897;&amp;#x4E8C;&amp;#x53C9;&amp;#x67E5;&amp;#x627E;&amp;#x6811;&amp;#xFF08;BST&amp;#xFF09;&amp;#x662F;&amp;#x4E00;&amp;#x9897;&amp;#x4E8C;&amp;#x53C9;&amp;#x6811;&amp;#xFF0C;&amp;#x5176;&amp;#x4E2D;&amp;#x6BCF;&amp;#x4E2A;&amp;#x8282;&amp;#x70B9;&amp;#x90">
 <meta property="og:type" content="article">
-<meta property="og:title" content="二叉查找树">
-<meta property="og:url" content="https://liuxu.co/2016/10/17/二叉查找树/index.html">
+<meta property="og:title" content="红黑树">
+<meta property="og:url" content="https://liuxu.co/2016/10/25/红黑树/index.html">
 <meta property="og:site_name" content="Irving23's Notes">
-<meta property="og:description" content="&amp;#x5B9A;&amp;#x4E49;&amp;#x4E00;&amp;#x9897;&amp;#x4E8C;&amp;#x53C9;&amp;#x67E5;&amp;#x627E;&amp;#x6811;&amp;#xFF08;BST&amp;#xFF09;&amp;#x662F;&amp;#x4E00;&amp;#x9897;&amp;#x4E8C;&amp;#x53C9;&amp;#x6811;&amp;#xFF0C;&amp;#x5176;&amp;#x4E2D;&amp;#x6BCF;&amp;#x4E2A;&amp;#x8282;&amp;#x70B9;&amp;#x90">
-<meta property="og:updated_time" content="2016-10-21T09:30:52.000Z">
+<meta property="og:updated_time" content="2016-10-25T02:42:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="二叉查找树">
-<meta name="twitter:description" content="&amp;#x5B9A;&amp;#x4E49;&amp;#x4E00;&amp;#x9897;&amp;#x4E8C;&amp;#x53C9;&amp;#x67E5;&amp;#x627E;&amp;#x6811;&amp;#xFF08;BST&amp;#xFF09;&amp;#x662F;&amp;#x4E00;&amp;#x9897;&amp;#x4E8C;&amp;#x53C9;&amp;#x6811;&amp;#xFF0C;&amp;#x5176;&amp;#x4E2D;&amp;#x6BCF;&amp;#x4E2A;&amp;#x8282;&amp;#x70B9;&amp;#x90">
+<meta name="twitter:title" content="红黑树">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -54,7 +51,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>二叉查找树 | Irving23&#39;s Notes</title>
+<title>红黑树 | Irving23&#39;s Notes</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -174,11 +171,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-二叉查找树" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-红黑树" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/10/17/二叉查找树/" class="article-date">
-      <time datetime="2016-10-17T09:37:21.000Z" itemprop="datePublished">2016-10-17</time>
+      <a href="/2016/10/25/红黑树/" class="article-date">
+      <time datetime="2016-10-25T02:41:40.000Z" itemprop="datePublished">2016-10-25</time>
 </a>
 
 
@@ -193,7 +190,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      二叉查找树
+      红黑树
     </h1>
   
 
@@ -203,10 +200,6 @@
         
 
         
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数据结构/">数据结构</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/树/">树</a></li></ul>
-    </div>
-
         <div class="clearfix"></div>
       </div>
       
@@ -214,9 +207,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="&#x5B9A;&#x4E49;"><a href="#&#x5B9A;&#x4E49;" class="headerlink" title="&#x5B9A;&#x4E49;"></a>&#x5B9A;&#x4E49;</h1><p>&#x4E00;&#x9897;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;&#xFF08;BST&#xFF09;&#x662F;&#x4E00;&#x9897;&#x4E8C;&#x53C9;&#x6811;&#xFF0C;&#x5176;&#x4E2D;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x90FD;&#x542B;&#x6709;&#x4E00;&#x4E2A;Comparable&#x7684;&#x952E;&#xFF08;&#x4EE5;&#x53CA;&#x76F8;&#x5173;&#x8054;&#x7684;&#x503C;&#xFF09;&#x4E14;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x952E;&#x90FD;&#x5927;&#x4E8E;&#x5176;&#x5DE6;&#x5B50;&#x6811;&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x8282;&#x70B9;&#x7684;&#x952E;&#x800C;&#x5C0F;&#x4E8E;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x4EFB;&#x610F;&#x8282;&#x70B9;&#x7684;&#x952E;&#x3002;</p>
-<p>#&#x67E5;&#x627E;</p>
-
+        <video src="/2016/09/29/2-3&#x6811;/redblack-255descending.mov" width="630" height="370" poster="/2016/09/29/2-3&#x6811;/redblack-255descending.jpg" controls><br></video>
       
     </div>
     
@@ -224,13 +215,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/10/17/二叉查找树/">二叉查找树</a></p>
+        <p><span>本文标题:</span><a href="/2016/10/25/红黑树/">红黑树</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Irving23</a></p>
-        <p><span>发布时间:</span>2016-10-17, 17:37:21</p>
-        <p><span>最后更新:</span>2016-10-21, 17:30:52</p>
+        <p><span>发布时间:</span>2016-10-25, 10:41:40</p>
+        <p><span>最后更新:</span>2016-10-25, 10:42:29</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/10/17/二叉查找树/" title="二叉查找树">https://liuxu.co/2016/10/17/二叉查找树/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://liuxu.co/2016/10/17/二叉查找树/　　作者: Irving23" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/10/25/红黑树/" title="红黑树">https://liuxu.co/2016/10/25/红黑树/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://liuxu.co/2016/10/25/红黑树/　　作者: Irving23" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -242,16 +233,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/10/25/红黑树/">
-                    红黑树
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/09/29/2-3树/">
-                    2-3树
+                <a href="/2016/10/17/二叉查找树/">
+                    二叉查找树
                 </a>
             </div>
         
@@ -263,7 +248,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#定义"><span class="toc-number">1.</span> <span class="toc-text">定义</span></a></li></ol>
+            
         
     </div>
     <style>
@@ -293,8 +278,8 @@
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function(){
-            this.page.url = 'https://liuxu.co/2016/10/17/二叉查找树/';
-            this.page.identifier = '2016/10/17/二叉查找树/';
+            this.page.url = 'https://liuxu.co/2016/10/25/红黑树/';
+            this.page.identifier = '2016/10/25/红黑树/';
         };
         var loadComment = function(){
             var d = document, s = d.createElement('script');
@@ -334,8 +319,8 @@
 
     // Add comment count
     <script id="dsq-count-scr" src="//irving23.disqus.com/count.js" async></script>
-    <span class="disqus-comment-count" data-disqus-identifier="2016/10/17/二叉查找树/"></span>
-    <span class="disqus-comment-count" data-disqus-url="https://liuxu.co/2016/10/17/二叉查找树/"></span>
+    <span class="disqus-comment-count" data-disqus-identifier="2016/10/25/红黑树/"></span>
+    <span class="disqus-comment-count" data-disqus-url="https://liuxu.co/2016/10/25/红黑树/"></span>
     <script>
         $(".disqus-comment-count").hide();
         var $disqusCount = $(".disqus-comment-count");

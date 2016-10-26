@@ -31,7 +31,9 @@
 <meta property="og:image" content="https://liuxu.co/2016/09/29/2-3树/insert-into-a-signale-3-node.svg">
 <meta property="og:image" content="https://liuxu.co/2016/09/29/2-3树/insert-into-a-3-node-whose-parent-is-a-2-node.svg">
 <meta property="og:image" content="https://liuxu.co/2016/09/29/2-3树/insert-into-a-3-node-whose-parent-is-a-3-node.svg">
-<meta property="og:updated_time" content="2016-10-21T04:16:45.000Z">
+<meta property="og:image" content="https://liuxu.co/2016/09/29/2-3树/splitting-the-root.svg">
+<meta property="og:image" content="https://liuxu.co/2016/09/29/2-3树/delete-a-3-node.svg">
+<meta property="og:updated_time" content="2016-10-26T11:52:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2-3树">
 <meta name="twitter:description" content="&amp;#x5B9A;&amp;#x4E49;
@@ -239,7 +241,20 @@
 <h2 id="&#x5411;&#x4E00;&#x9897;&#x53EA;&#x542B;&#x6709;&#x4E00;&#x4E2A;3-&#x8282;&#x70B9;&#x7684;&#x6811;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;"><a href="#&#x5411;&#x4E00;&#x9897;&#x53EA;&#x542B;&#x6709;&#x4E00;&#x4E2A;3-&#x8282;&#x70B9;&#x7684;&#x6811;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;" class="headerlink" title="&#x5411;&#x4E00;&#x9897;&#x53EA;&#x542B;&#x6709;&#x4E00;&#x4E2A;3-&#x8282;&#x70B9;&#x7684;&#x6811;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;"></a>&#x5411;&#x4E00;&#x9897;&#x53EA;&#x542B;&#x6709;&#x4E00;&#x4E2A;3-&#x8282;&#x70B9;&#x7684;&#x6811;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;</h2><p><img src="/2016/09/29/2-3&#x6811;/insert-into-a-signale-3-node.svg" alt="&#x5411;&#x4E00;&#x9897;&#x53EA;&#x542B;&#x6709;&#x4E00;&#x4E2A;3-&#x8282;&#x70B9;&#x7684;&#x6811;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;"></p>
 <h2 id="&#x5411;&#x4E00;&#x4E2A;&#x7236;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;&#x7684;3-&#x8282;&#x70B9;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;"><a href="#&#x5411;&#x4E00;&#x4E2A;&#x7236;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;&#x7684;3-&#x8282;&#x70B9;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;" class="headerlink" title="&#x5411;&#x4E00;&#x4E2A;&#x7236;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;&#x7684;3-&#x8282;&#x70B9;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;"></a>&#x5411;&#x4E00;&#x4E2A;&#x7236;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;&#x7684;3-&#x8282;&#x70B9;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;</h2><p><img src="/2016/09/29/2-3&#x6811;/insert-into-a-3-node-whose-parent-is-a-2-node.svg" alt="&#x5411;&#x4E00;&#x4E2A;&#x7236;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;&#x7684;3-&#x8282;&#x70B9;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;"></p>
 <h2 id="&#x5411;&#x4E00;&#x4E2A;&#x7236;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;&#x7684;3-&#x8282;&#x70B9;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;"><a href="#&#x5411;&#x4E00;&#x4E2A;&#x7236;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;&#x7684;3-&#x8282;&#x70B9;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;" class="headerlink" title="&#x5411;&#x4E00;&#x4E2A;&#x7236;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;&#x7684;3-&#x8282;&#x70B9;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;"></a>&#x5411;&#x4E00;&#x4E2A;&#x7236;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;&#x7684;3-&#x8282;&#x70B9;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;</h2><p><img src="/2016/09/29/2-3&#x6811;/insert-into-a-3-node-whose-parent-is-a-3-node.svg" alt="&#x5411;&#x4E00;&#x4E2A;&#x7236;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;&#x7684;3-&#x8282;&#x70B9;&#x4E2D;&#x63D2;&#x5165;&#x65B0;&#x952E;"></p>
-<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1>
+<h2 id="&#x5206;&#x89E3;&#x6839;&#x8282;&#x70B9;"><a href="#&#x5206;&#x89E3;&#x6839;&#x8282;&#x70B9;" class="headerlink" title="&#x5206;&#x89E3;&#x6839;&#x8282;&#x70B9;"></a>&#x5206;&#x89E3;&#x6839;&#x8282;&#x70B9;</h2><p><img src="/2016/09/29/2-3&#x6811;/splitting-the-root.svg" alt="&#x5206;&#x89E3;&#x6839;&#x8282;&#x70B9;"></p>
+<h1 id="&#x5220;&#x9664;"><a href="#&#x5220;&#x9664;" class="headerlink" title="&#x5220;&#x9664;"></a>&#x5220;&#x9664;</h1><h2 id="&#x5220;&#x9664;&#x53F6;&#x8282;&#x70B9;&#x4E2D;&#x7684;&#x952E;"><a href="#&#x5220;&#x9664;&#x53F6;&#x8282;&#x70B9;&#x4E2D;&#x7684;&#x952E;" class="headerlink" title="&#x5220;&#x9664;&#x53F6;&#x8282;&#x70B9;&#x4E2D;&#x7684;&#x952E;"></a>&#x5220;&#x9664;&#x53F6;&#x8282;&#x70B9;&#x4E2D;&#x7684;&#x952E;</h2><h3 id="&#x53F6;&#x8282;&#x70B9;&#x662F;3-&#x8282;&#x70B9;"><a href="#&#x53F6;&#x8282;&#x70B9;&#x662F;3-&#x8282;&#x70B9;" class="headerlink" title="&#x53F6;&#x8282;&#x70B9;&#x662F;3-&#x8282;&#x70B9;"></a>&#x53F6;&#x8282;&#x70B9;&#x662F;3-&#x8282;&#x70B9;</h3><p><img src="/2016/09/29/2-3&#x6811;/delete-a-3-node.svg" alt="&#x53F6;&#x8282;&#x70B9;&#x662F;3-&#x8282;&#x70B9;"></p>
+<h3 id="&#x53F6;&#x8282;&#x70B9;&#x662F;2-&#x8282;&#x70B9;"><a href="#&#x53F6;&#x8282;&#x70B9;&#x662F;2-&#x8282;&#x70B9;" class="headerlink" title="&#x53F6;&#x8282;&#x70B9;&#x662F;2-&#x8282;&#x70B9;"></a>&#x53F6;&#x8282;&#x70B9;&#x662F;2-&#x8282;&#x70B9;</h3><p>&#x4ECE;2-&#x8282;&#x70B9;&#x4E2D;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x952E;&#x4F1A;&#x7559;&#x4E0B;&#x4E00;&#x4E2A;&#x7A7A;&#x8282;&#x70B9;&#xFF0C;&#x4E00;&#x822C;&#x4F1A;&#x5C06;&#x5B83;&#x66FF;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x7A7A;&#x94FE;&#x63A5;&#xFF0C;&#x4F46;&#x8FD9;&#x6837;&#x4F1A;&#x7834;&#x574F;&#x6811;&#x7684;&#x5B8C;&#x7F8E;&#x5E73;&#x8861;&#x6027;&#x3002;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x53D8;&#x6362;&#xFF0C;&#x6765;&#x786E;&#x4FDD;&#x8981;&#x5220;&#x9664;&#x7684;&#x952E;&#x6240;&#x5728;&#x7684;&#x53F6;&#x8282;&#x70B9;&#x4E0D;&#x662F;2-&#x8282;&#x70B9;&#x3002;</p>
+<ol>
+<li>&#x4ECE;&#x6839;&#x8282;&#x70B9;&#x6CBF;&#x7740;&#x67E5;&#x627E;&#x8DEF;&#x5F84;&#x5230;&#x8FBE;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF08;&#x5373;&#x6839;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;&#xFF09;</li>
+<li>&#x5982;&#x679C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x662F;3-&#x8282;&#x70B9;&#xFF0C;&#x6CBF;&#x7740;&#x67E5;&#x627E;&#x8DEF;&#x5F84;&#x5230;&#x8FBE;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;</li>
+<li>&#x5982;&#x679C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x662F;2-&#x8282;&#x70B9;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5982;&#x4E0B;&#x7684;&#x53D8;&#x6362;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6CBF;&#x7740;&#x67E5;&#x627E;&#x8DEF;&#x5F84;&#x5230;&#x8FBE;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;</li>
+<li>&#x91CD;&#x590D;2&#xFF0C;3&#x64CD;&#x4F5C;&#xFF0C;&#x76F4;&#x5230;&#x5230;&#x8FBE;&#x53F6;&#x8282;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x5220;&#x9664;&#x53F6;&#x8282;&#x70B9;&#x4E2D;&#x9700;&#x8981;&#x5220;&#x9664;&#x7684;&#x952E;&#xFF0C;&#x5982;&#x679C;&#x53F6;&#x8282;&#x70B9;&#x4E4B;&#x524D;&#x662F;3-&#x8282;&#x70B9;&#xFF0C;&#x53D8;&#x4E3A;2-&#x8282;&#x70B9;&#xFF0C;&#x5982;&#x679C;&#x53F6;&#x8282;&#x70B9;&#x4E4B;&#x524D;&#x662F;4-&#x8282;&#x70B9;&#xFF0C;&#x53D8;&#x4E3A;3-&#x8282;&#x70B9;</li>
+<li>&#x4ECE;&#x53F6;&#x8282;&#x70B9;&#x6CBF;&#x7740;&#x67E5;&#x627E;&#x8DEF;&#x5F84;&#x5411;&#x4E0A;&#xFF0C;&#x5C06;&#x8DEF;&#x5F84;&#x4E0A;&#x6240;&#x6709;&#x4E34;&#x65F6;&#x751F;&#x6210;&#x7684;4-&#x8282;&#x70B9;&#x5206;&#x89E3;</li>
+</ol>
+<h4 id="&#x7236;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;&#xFF0C;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;"><a href="#&#x7236;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;&#xFF0C;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;" class="headerlink" title="&#x7236;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;&#xFF0C;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;"></a>&#x7236;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;&#xFF0C;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;</h4><p>&#x53EA;&#x6709;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x6839;&#x8282;&#x70B9;&#x65F6;&#xFF0C;&#x7236;&#x8282;&#x70B9;&#x624D;&#x6709;&#x53EF;&#x80FD;&#x662F;2-&#x8282;&#x70B9;&#xFF0C;&#x5426;&#x5219;&#x6CBF;&#x7740;&#x67E5;&#x627E;&#x8DEF;&#x5F84;&#x53D8;&#x6362;&#xFF0C;&#x7236;&#x8282;&#x70B9;&#x4E00;&#x5B9A;&#x662F;3-&#x8282;&#x70B9;&#x6216;&#x8005;&#x4E34;&#x65F6;&#x7684;4-&#x8282;&#x70B9;</p>
+<h4 id="&#x7236;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;&#xFF0C;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;"><a href="#&#x7236;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;&#xFF0C;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;" class="headerlink" title="&#x7236;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;&#xFF0C;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;"></a>&#x7236;&#x8282;&#x70B9;&#x4E3A;2-&#x8282;&#x70B9;&#xFF0C;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;</h4><p>&#x53EA;&#x6709;&#x7236;&#x8282;&#x70B9;&#x4E3A;&#x6839;&#x8282;&#x70B9;&#x65F6;&#xFF0C;&#x7236;&#x8282;&#x70B9;&#x624D;&#x6709;&#x53EF;&#x80FD;&#x662F;2-&#x8282;&#x70B9;&#xFF0C;&#x5426;&#x5219;&#x6CBF;&#x7740;&#x67E5;&#x627E;&#x8DEF;&#x5F84;&#x53D8;&#x6362;&#xFF0C;&#x7236;&#x8282;&#x70B9;&#x4E00;&#x5B9A;&#x662F;3-&#x8282;&#x70B9;&#x6216;&#x8005;&#x4E34;&#x65F6;&#x7684;4-&#x8282;&#x70B9;</p>
+<h4 id="&#x7236;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E2D;&#x6709;3-&#x8282;&#x70B9;"><a href="#&#x7236;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E2D;&#x6709;3-&#x8282;&#x70B9;" class="headerlink" title="&#x7236;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E2D;&#x6709;3-&#x8282;&#x70B9;"></a>&#x7236;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E2D;&#x6709;3-&#x8282;&#x70B9;</h4><h4 id="&#x7236;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x90FD;&#x662F;2-&#x8282;&#x70B9;"><a href="#&#x7236;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x90FD;&#x662F;2-&#x8282;&#x70B9;" class="headerlink" title="&#x7236;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x90FD;&#x662F;2-&#x8282;&#x70B9;"></a>&#x7236;&#x8282;&#x70B9;&#x4E3A;3-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x90FD;&#x662F;2-&#x8282;&#x70B9;</h4><h4 id="&#x7236;&#x8282;&#x70B9;&#x4E3A;4-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E2D;&#x6709;3-&#x8282;&#x70B9;"><a href="#&#x7236;&#x8282;&#x70B9;&#x4E3A;4-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E2D;&#x6709;3-&#x8282;&#x70B9;" class="headerlink" title="&#x7236;&#x8282;&#x70B9;&#x4E3A;4-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E2D;&#x6709;3-&#x8282;&#x70B9;"></a>&#x7236;&#x8282;&#x70B9;&#x4E3A;4-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x4E2D;&#x6709;3-&#x8282;&#x70B9;</h4><h4 id="&#x7236;&#x8282;&#x70B9;&#x4E3A;4-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x90FD;&#x662F;2-&#x8282;&#x70B9;"><a href="#&#x7236;&#x8282;&#x70B9;&#x4E3A;4-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x90FD;&#x662F;2-&#x8282;&#x70B9;" class="headerlink" title="&#x7236;&#x8282;&#x70B9;&#x4E3A;4-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x90FD;&#x662F;2-&#x8282;&#x70B9;"></a>&#x7236;&#x8282;&#x70B9;&#x4E3A;4-&#x8282;&#x70B9;&#xFF0C;&#x76F8;&#x90BB;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;&#x90FD;&#x662F;2-&#x8282;&#x70B9;</h4><h2 id="&#x5220;&#x9664;&#x975E;&#x53F6;&#x8282;&#x70B9;&#x4E2D;&#x7684;&#x952E;"><a href="#&#x5220;&#x9664;&#x975E;&#x53F6;&#x8282;&#x70B9;&#x4E2D;&#x7684;&#x952E;" class="headerlink" title="&#x5220;&#x9664;&#x975E;&#x53F6;&#x8282;&#x70B9;&#x4E2D;&#x7684;&#x952E;"></a>&#x5220;&#x9664;&#x975E;&#x53F6;&#x8282;&#x70B9;&#x4E2D;&#x7684;&#x952E;</h2><h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><a href="http://www.voidcn.com/blog/sumoyu/article/p-889083.html" target="_blank" rel="external">http://www.voidcn.com/blog/sumoyu/article/p-889083.html</a><br><a href="http://riteme.github.io/blog/2016-3-12/2-3-tree-and-red-black-tree.html" target="_blank" rel="external">http://riteme.github.io/blog/2016-3-12/2-3-tree-and-red-black-tree.html</a><br><a href="http://cs.wellesley.edu/~cs230/spring07/2-3-trees.pdf" target="_blank" rel="external">http://cs.wellesley.edu/~cs230/spring07/2-3-trees.pdf</a></p>
+
       
     </div>
     
@@ -250,7 +265,7 @@
         <p><span>本文标题:</span><a href="/2016/09/29/2-3树/">2-3树</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Irving23</a></p>
         <p><span>发布时间:</span>2016-09-29, 17:58:30</p>
-        <p><span>最后更新:</span>2016-10-21, 12:16:45</p>
+        <p><span>最后更新:</span>2016-10-26, 19:52:25</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/09/29/2-3树/" title="2-3树">https://liuxu.co/2016/09/29/2-3树/</a>
             <span class="copy-path" data-clipboard-text="原文: https://liuxu.co/2016/09/29/2-3树/　　作者: Irving23" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -280,7 +295,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#定义"><span class="toc-number">1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查找"><span class="toc-number">2.</span> <span class="toc-text">查找</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#插入"><span class="toc-number">3.</span> <span class="toc-text">插入</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#向2-节点中插入新键"><span class="toc-number">3.1.</span> <span class="toc-text">向2-节点中插入新键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#向一颗只含有一个3-节点的树中插入新键"><span class="toc-number">3.2.</span> <span class="toc-text">向一颗只含有一个3-节点的树中插入新键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#向一个父节点为2-节点的3-节点中插入新键"><span class="toc-number">3.3.</span> <span class="toc-text">向一个父节点为2-节点的3-节点中插入新键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#向一个父节点为3-节点的3-节点中插入新键"><span class="toc-number">3.4.</span> <span class="toc-text">向一个父节点为3-节点的3-节点中插入新键</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#References"><span class="toc-number">4.</span> <span class="toc-text">References</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#定义"><span class="toc-number">1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#查找"><span class="toc-number">2.</span> <span class="toc-text">查找</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#插入"><span class="toc-number">3.</span> <span class="toc-text">插入</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#向2-节点中插入新键"><span class="toc-number">3.1.</span> <span class="toc-text">向2-节点中插入新键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#向一颗只含有一个3-节点的树中插入新键"><span class="toc-number">3.2.</span> <span class="toc-text">向一颗只含有一个3-节点的树中插入新键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#向一个父节点为2-节点的3-节点中插入新键"><span class="toc-number">3.3.</span> <span class="toc-text">向一个父节点为2-节点的3-节点中插入新键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#向一个父节点为3-节点的3-节点中插入新键"><span class="toc-number">3.4.</span> <span class="toc-text">向一个父节点为3-节点的3-节点中插入新键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分解根节点"><span class="toc-number">3.5.</span> <span class="toc-text">分解根节点</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#删除"><span class="toc-number">4.</span> <span class="toc-text">删除</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#删除叶节点中的键"><span class="toc-number">4.1.</span> <span class="toc-text">删除叶节点中的键</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#叶节点是3-节点"><span class="toc-number">4.1.1.</span> <span class="toc-text">叶节点是3-节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#叶节点是2-节点"><span class="toc-number">4.1.2.</span> <span class="toc-text">叶节点是2-节点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#父节点为2-节点，兄弟节点为2-节点"><span class="toc-number">4.1.2.1.</span> <span class="toc-text">父节点为2-节点，兄弟节点为2-节点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#父节点为2-节点，兄弟节点为3-节点"><span class="toc-number">4.1.2.2.</span> <span class="toc-text">父节点为2-节点，兄弟节点为3-节点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#父节点为3-节点，相邻的兄弟节点中有3-节点"><span class="toc-number">4.1.2.3.</span> <span class="toc-text">父节点为3-节点，相邻的兄弟节点中有3-节点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#父节点为3-节点，相邻的兄弟节点都是2-节点"><span class="toc-number">4.1.2.4.</span> <span class="toc-text">父节点为3-节点，相邻的兄弟节点都是2-节点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#父节点为4-节点，相邻的兄弟节点中有3-节点"><span class="toc-number">4.1.2.5.</span> <span class="toc-text">父节点为4-节点，相邻的兄弟节点中有3-节点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#父节点为4-节点，相邻的兄弟节点都是2-节点"><span class="toc-number">4.1.2.6.</span> <span class="toc-text">父节点为4-节点，相邻的兄弟节点都是2-节点</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#删除非叶节点中的键"><span class="toc-number">4.2.</span> <span class="toc-text">删除非叶节点中的键</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Reference"><span class="toc-number">5.</span> <span class="toc-text">Reference</span></a></li></ol>
         
     </div>
     <style>
@@ -321,10 +336,48 @@
         }
     </script>
     
-    <script> loadComment(); </script>
+    <aside class="comment-bar">
+        <a href="javascript:void(0);">
+            <i class="fa fa-commenting-o animated infinite pulse"></i>
+            <i class="fa fa-spinner fa-pulse"></i>
+            <span class="count-comment"></span>
+        </a>
+    </aside>
+    <script>
+        var $commentBar = $("#comments aside.comment-bar");
+        var load$hide = function(){
+            $commentBar.find("a > i").toggle();
+            loadComment();
+            $commentBar.fadeOut(800);
+        }
+        $commentBar.click(function(){
+            load$hide();
+        })
+        $commentBar.children("a").hover(function(){
+            load$hide();
+        })
+        if (window.location.hash === "#comments") {
+            load$hide();
+        }
+    </script>
 
 </section>
 
+
+    // Add comment count
+    <script id="dsq-count-scr" src="//irving23.disqus.com/count.js" async></script>
+    <span class="disqus-comment-count" data-disqus-identifier="2016/09/29/2-3树/"></span>
+    <span class="disqus-comment-count" data-disqus-url="https://liuxu.co/2016/09/29/2-3树/"></span>
+    <script>
+        $(".disqus-comment-count").hide();
+        var $disqusCount = $(".disqus-comment-count");
+        $disqusCount.bind("DOMNodeInserted", function(e) {
+            $(".count-comment").text(
+                $(this).text().replace(/[^0-9]/ig,"")
+            )
+            DISQUSWIDGETS.getCount({reset: true});
+        })
+    </script>
 
     
 
@@ -371,19 +424,6 @@
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
 
 
-
-<!-- Google Analytics -->
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-84763421-1', 'auto');
-ga('send', 'pageview');
-
-</script>
-<!-- End Google Analytics -->
 
 
 
